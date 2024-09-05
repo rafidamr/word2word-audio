@@ -15,6 +15,12 @@ transformers = "^4.44.2"
 datasets = "^2.21.0"
 evaluate = "^0.4.2"
 accelerate = "^0.33.0"
+jupyterlab = "^4.2.5"
+ipywidgets = "^8.1.5"
+soundfile = "^0.12.1"
+librosa = "^0.10.2.post1"
+huggingface-hub = "^0.24.6"
+jiwer = "^3.0.4"
 
 [build-system]
 requires = ["poetry-core"]
