@@ -6,7 +6,7 @@ from transformers import Wav2Vec2ForCTC, Wav2Vec2Processor
 from pyctcdecode import build_ctcdecoder
 
 
-speakers = ["2", "3", "4", "5", "6", "7", "8"]
+speakers = ["1", "2", "3", "4", "5", "6", "7", "8"]
 
 for speaker_id in speakers:
     BATCH_SIZE = 25
