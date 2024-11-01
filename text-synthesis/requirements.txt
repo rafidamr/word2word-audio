@@ -29,7 +29,6 @@ grpc-google-iam-v1==0.13.1
 grpcio==1.67.0                                                                                                                                                                                    
 grpcio-status==1.67.0
 huggingface-hub==0.26.0
-huggingsound==0.1.6
 HyperPyYAML==1.2.2
 hypothesis==6.115.3
 idna==3.10
