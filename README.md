@@ -6,7 +6,8 @@ For translating audio with RTF approximately 1.0 to 1.5 (tested on 12 hours audi
 * 32 GB RAM 
 * 100-200 GB SSD Persistent Disk
 
-## Common Workflow
+## Common Inference Workflow
+> The workflow is basically diarization, ASR, translation, TTS, and voice conversion; proper directory structure is necessary for organizing each speaker text/audio
 
 ### Diarization
 * Use `diarizer.py`
@@ -19,8 +20,8 @@ For translating audio with RTF approximately 1.0 to 1.5 (tested on 12 hours audi
 ### Audio Synthesis
 #### Preprocessing
 * If any, remove remaining clutters in the texts
-* Assign RVC ID for each speaker
-* Instantiate local RVC engine
+* Instantiate local Voice Conversion (VC) engine with pre-trained models (training the models is a separate process of voice cloning, use RVC-Project) 
+* Assign VC ID for each speaker
 #### Synthesis
 * Indonesian audio synthesis: Spin up a local TTS synthesizer and run `synthesis-client.py`
 * English audio synthesis: Use API `google_tts.py` and `synthesis-client--gcp-raw.py`
