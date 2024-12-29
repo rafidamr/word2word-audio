@@ -6,9 +6,11 @@ import torchaudio
 import os
 
 
+USE_AUTH_TOKEN = os.environ.get("USE_AUTH_TOKEN")
+
 pipeline = Pipeline.from_pretrained(
     "pyannote/speaker-diarization-3.1",
-    use_auth_token="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")
+    use_auth_token=USE_AUTH_TOKEN)
 
 # send pipeline to GPU (when available)
 pipeline.to(torch.device("cuda"))
